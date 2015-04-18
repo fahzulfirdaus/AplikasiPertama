@@ -3,7 +3,10 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="apakabar_dunia">Apa kabar Dunia</string>
-    <string name="translate">Translate</string>
+    <string name="peuhaba_donya">Peuhaba Donya</string>
+    <string name="tombol_translate">Translate</string>
     <string name="tombol_terjemahan">Terjemahkan</string>
+    <string name="tombol_arti">Arti jih</string>
+
     <string name="action_settings">Settings</string>
 </resources>

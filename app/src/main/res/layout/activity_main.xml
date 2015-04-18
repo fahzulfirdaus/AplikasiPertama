@@ -17,11 +17,40 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tombol_terjemahan"
-        android:id="@+id/btnTerjemahan"
-        android:layout_below="@+id/txtTulisan"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
-        android:onClick="onClickTombolTerjemah"/>
+        android:id="@+id/btn_terjemah_id"
+        android:onClick="onClickBtnTerjemahInd"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_terjemah_ac"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/btn_terjemah_ac"
+        android:layout_alignEnd="@+id/btn_terjemah_ac"
+        android:capitalize="none" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tombol_translate"
+        android:id="@+id/btn_terjemah_en"
+        android:onClick="onClickBtnTerjemahEng"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_terjemah_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:capitalize="none" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tombol_arti"
+        android:onClick="onClickBtnTerjemahAch"
+        android:id="@+id/btn_terjemah_ac"
+        android:layout_below="@+id/txtTulisan"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:capitalize="none" />
 
 </RelativeLayout>

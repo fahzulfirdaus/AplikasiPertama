@@ -41,23 +41,23 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    public void onClickTombolTerjemah(View view){
-        TextView txtTulisan = (TextView) findViewById(R.id.txtTulisan);
-        Button button = (Button) findViewById(R.id.btnTerjemahan);
 
-        if (bahasaIndonesia == false){
-        String apakabar = getString(R.string.apakabar_dunia);
-        button.setText(R.string.translate);
-        txtTulisan.setText(apakabar);
-        bahasaIndonesia = true;
-        }
-        else{
-            String helloword = getString(R.string.hello_world);
-            button.setText(R.string.tombol_terjemahan);
-            txtTulisan.setText(helloword);
-            bahasaIndonesia = false;
-        }
-
+    public void onClickBtnTerjemahInd(View view) {
+        TextView textView = (TextView) findViewById(R.id.txtTulisan);
+        //Translate ke bahasa Indonesia
+        String apakabar_dunia = getString(R.string.apakabar_dunia);
+        textView.setText(apakabar_dunia);
     }
-    private boolean bahasaIndonesia = false;
+    public void onClickBtnTerjemahEng(View view) {
+        TextView textView = (TextView) findViewById(R.id.txtTulisan);
+        //Translate ke bahasa Inggris
+        String hello_world = getString(R.string.hello_world);
+        textView.setText(hello_world);
+    }
+    public void onClickBtnTerjemahAch(View view) {
+        TextView textView = (TextView) findViewById(R.id.txtTulisan);
+        //Translate ke bahasa Aceh
+        String peuhaba_donya = getString(R.string.peuhaba_donya);
+        textView.setText(peuhaba_donya);
+    }
 }
